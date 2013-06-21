@@ -1,0 +1,116 @@
+
+
+.font-default {
+	font-family: $font-default;
+	font-weight: 300;
+}
+
+.font-headline {
+	font-family: $font-headline;
+	font-weight: 100;
+}
+
+.font-content {
+	font-family: $font-content;
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.screen-reader-text {
+	display: none !important;
+}
+
+
+
+.pure-button {
+	color: $color-button;
+	background-image: none !important;
+	background-color: $color-button-bg;
+	/* These are needed to override some inconsistencies in the ".pure-form input" buttons */
+	font-size: 18px !important;
+	box-shadow: none !important;
+	border-radius: 4px !important;
+	border-top: none rgba(0, 0, 0, 0) !important;
+	border-left: none rgba(0, 0, 0, 0) !important;
+	border-right: none rgba(0, 0, 0, 0) !important;
+	border-bottom: 3px solid $color-button-bg-hover !important;
+}
+
+.pure-button-hover,
+.pure-button:hover {
+	text-decoration: none;
+	color: $color-button;
+	background-color: $color-button-bg;
+}
+
+button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"] {
+	@extend .pure-button;
+}
+
+
+
+
+
+body {
+	@extend .font-default;
+	color: $color-dark;
+	min-width: 300px;
+}
+
+
+
+
+
+h1, h2, h3 {
+	@extend .font-headline;
+	margin: 0 0 0.2em 0;
+}
+
+h4, h5, h6 {
+	@extend .font-default;
+	margin: 0 0 0.15em 0;
+}
+
+h1 {
+	font-size: $h1-font-size;
+}
+
+h2 {
+	font-size: $h2-font-size;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+h4 {
+	font-size: $h4-font-size;
+}
+
+h5 {
+	font-size: $h5-font-size;
+}
+
+h6 {
+	font-size: $h6-font-size;
+}
+
+
+
+
+a {
+	color: $color-link;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: $color-link-hover;
+}
+
+
+
+.site-main {
+	margin: 0 auto;
+	max-width: $layout-max-width;
+}

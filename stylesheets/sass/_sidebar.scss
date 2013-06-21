@@ -1,0 +1,104 @@
+
+.site-personal {
+	@include column(12);
+
+	.site-header {
+		margin: 0 0 20px 0;
+	}
+
+	.site-avatar {
+		margin: 30px 0 5px 5px;
+		/*
+		img {
+			width: 62.5px;
+			height: 62.5px;
+		}
+		*/
+	}
+
+	.site-title {
+		@extend .font-headline;
+		font-size: $header-font-size;
+		padding-top: 5px;
+
+		a {
+			color: $color-dark;
+			text-decoration: none;
+		}
+	}
+
+	.site-description {
+		@extend .font-content;
+		font-style: italic;
+		color: $color-light;
+	}
+
+	.widget {
+		display: none; /* widgets disabled by default in compact view */
+
+		.title {
+			@extend .font-headline;
+			font-size: $h3-font-size;
+			margin-bottom: 10px;
+			display: none;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			margin: 0 0 5px 0;
+		}
+	}
+
+	.social-links {
+		display: block; /* This is the only widget shown in compact view */
+
+		a {
+			display: inline-block;
+			text-align: left;
+			text-indent: -1000px;
+			overflow: hidden;
+			width: 57px;
+			height: 57px;
+			margin: 0 0 10px 10px;
+			background-repeat: none;
+			background-size: 100% 100%;
+		}
+
+		li {
+			margin: 0;
+		}
+
+		li:first-child a {
+			margin-left: 0px;
+		}
+
+		.instagram {
+			background-image: url(images/social/instagram.png);
+		}
+
+		.facebook {
+			background-image: url(images/social/facebook.png);
+		}
+
+		.twitter {
+			background-image: url(images/social/twitter.png);
+		}
+
+		.linkedin {
+			background-image: url(images/social/linkedin.png);
+		}
+
+		.gplus {
+			background-image: url(images/social/google-plus.png);
+		}
+
+		.rss {
+			background-image: url(images/social/rss.png);
+		}
+
+	}
+
+}

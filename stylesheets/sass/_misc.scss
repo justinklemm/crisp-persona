@@ -1,0 +1,38 @@
+
+/* This is used as the traditional .clearfix class */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+/* Linear lists */
+.linear {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.linear li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+/* Wordpress search box is used in a couple different spots */
+.searchform {
+  @extend .pure-form;
+
+  .field {
+    display: block;
+    width: 240px;
+    margin: 0 0 10px 0;
+  }
+}

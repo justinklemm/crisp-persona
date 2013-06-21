@@ -1,0 +1,73 @@
+/*
+Theme Name: Crisp Persona
+Theme URI: http://justinklemm.com/crisp-persona/
+Author: Justin Klemm
+Author URI: http://justinklemm.com
+Description: A sleek, responsive WordPress theme for your personal blog
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: personal, sleek, responsive
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+This theme was initially built with Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+Icon set found at http://www.graphicsfuel.com/2013/06/simple-flat-social-media-icons-psd-png/
+Theme options implemented with help from http://themeshaper.com/2010/06/03/sample-theme-options/
+*/
+
+@import '../bourbon/bourbon';
+@import '../pure/src/base/css/_normalize.scss';
+@import '../pure/src/forms/css/_forms.scss';
+@import '../pure/src/tables/css/_tables.scss';
+@import '../pure/src/buttons/css/_buttons.scss';
+@import '_grid.scss';
+
+/* Grid settings */
+$column-width: 60;
+$gutter-width: 100;
+$columns: 12;
+$total-width: 100%;
+$layout-max-width: 1240px;
+
+/* Responsive break points */
+$breakpoint-tablet: 800px;
+$breakpoint-phone: 480px;
+
+/* Font settings */
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
+
+$font-default: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+$font-headline: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+$font-content: 'Georgia', serif;
+
+$header-font-size: 46px;
+$h1-font-size: 42px;
+$h2-font-size: 34px;
+$h3-font-size: 26px;
+$h4-font-size: 22px;
+$h5-font-size: 18px;
+$h6-font-size: 16px;
+
+/* Color settings */
+$color-dark: #333;
+$color-light: #999;
+$color-light-bg: #eee;
+$color-link: #07a;
+$color-link-hover: darken($color-link, 10%);;
+$color-pre: #fff;
+$color-pre-bg: #000;
+$color-button: #fff;
+$color-button-bg: $color-link;
+$color-button-bg-hover: darken($color-button-bg, 10%);
+
+/* Include all styles */
+@import '_misc.scss';
+@import '_global.scss';
+@import '_sidebar.scss';
+@import '_content.scss';
+@import '_comments.scss';
+@import '_footer.scss';
+@import '_responsive.scss';
+@import '_print.scss';

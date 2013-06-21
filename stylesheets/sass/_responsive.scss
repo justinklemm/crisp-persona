@@ -1,0 +1,110 @@
+
+@media screen and (min-width: 480px) {
+	.site-personal {
+		.site-avatar {
+			float: right;
+		}
+
+		.site-title {
+			padding-top: 15px;
+		}
+	}
+
+	.site-content .entry-content p {
+		text-align: left;
+	}
+
+	.site-footer {
+
+		.category-links {
+			@include column(5);
+			float: left;
+		}
+
+		.page-links {
+			@include column(7);
+			float: left;
+		}
+	}
+}
+
+@media screen and (min-width: 630px) {
+	.site-footer {
+		.col {
+			float: left;
+		}
+
+		.popular-posts {
+			@include column(5);
+		}
+
+		.category-links {
+			@include column(3);
+		}
+
+		.page-links {
+			@include column(4);
+		}
+	}
+}
+
+
+@media screen and (min-width: 960px) {
+	.site-personal {
+		@include column(4);
+		float: right;
+
+		.site-header {
+			/*margin-bottom: 40px;*/
+		}
+
+		.site-avatar {
+			float: none;
+			text-align: right;
+		}
+
+		.site-title {
+			text-align: right;
+		}
+
+		.site-description {
+			float: right;
+			width: 190px;
+			text-align: right;
+		}
+
+		.bottom {
+			clear: right;
+		}
+
+		.widget {
+			display: block;
+			clear: both;
+			text-align: right;
+			margin-top: 50px;
+
+			.title {
+				display: block;
+			}
+		}
+
+		.social-links {
+			margin-bottom: -10px;
+		}
+
+	}
+
+	.site-content {
+		@include column(8);
+		/* We need to hack the grid a little bit to get the right border to work... */
+		margin-right: 0;
+		padding-right: 2.4%;
+		min-height: 900px;
+		border-right: 2px solid $color-light-bg;
+
+		.social-sharing {
+			display: block;
+		}
+	}
+
+}

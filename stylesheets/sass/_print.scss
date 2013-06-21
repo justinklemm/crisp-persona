@@ -1,0 +1,48 @@
+
+@media print {
+
+	a {
+		text-decoration: underline;
+	}
+
+	.site-personal {
+		.site-avatar {
+			float: right;
+
+			img {
+				width: 62.5px;
+				height: 62.5px;
+			}
+		}
+
+		.site-title {
+			padding-top: 15px;
+		}
+
+		.social-links {
+			display: none;
+		}
+	}
+
+	.site-content {
+		margin-top: 0;
+
+		pre {
+			background-color: #fff;
+			color: $color-dark;
+			border: 1px solid $color-light;
+		}
+
+		footer.entry-meta {
+			display: none;
+		}
+	}
+
+	.comments-area #respond {
+		display: none;
+	}
+
+	.site-footer {
+		display: none;
+    }
+}
