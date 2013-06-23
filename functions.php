@@ -5,6 +5,12 @@
  * @package Crisp Persona
  */
 
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) )
+	$content_width = 762; /* pixels */
+
 /*
  * Load admin interface file.
  */

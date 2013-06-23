@@ -7,7 +7,7 @@ add_action( 'admin_menu', 'crisp_persona_options_add_page' );
  * Init plugin options to white list our options
  */
 function crisp_persona_options_init(){
-	register_setting( 'crisp_persona_options_group', 'crisp_persona_options' );
+	register_setting( 'crisp_persona_options_group', 'crisp_persona_options', 'crisp_persona_options_validate' );
 }
 
 /**
@@ -15,6 +15,19 @@ function crisp_persona_options_init(){
  */
 function crisp_persona_options_add_page() {
 	add_theme_page( __( 'Theme Options', 'crisp-persona' ), __( 'Theme Options', 'crisp-persona' ), 'edit_theme_options', 'crisp_persona_options', 'crisp_persona_options_page' );
+}
+
+/**
+ * Sanitize options input
+ */
+function crisp_persona_options_validate( $input ) {
+	$output = array();
+
+	if( is_array($input) ) foreach( $input as $key => $val ) {
+		$output[$key] = wp_filter_nohtml_kses( $val );
+	}
+
+	return $output;
 }
 
 /**

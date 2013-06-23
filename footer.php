@@ -16,12 +16,12 @@
 					<h3>Popular Posts</h3>
 					<ul>
 					<?php
-					$popular = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'post_view_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
+					$popular = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'post_view_count', 'orderby' => 'meta_value_num', 'order' => 'DESC' ) );
 					while ( $popular->have_posts() ) : $popular->the_post();
 					?>
 					<li class="post">
 						<div class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-						<p class="post-content"><?php echo crisp_persona_truncate(get_the_content()); ?></p>
+						<p class="post-content"><?php echo crisp_persona_truncate( get_the_content() ); ?></p>
 					</li>
 					<?php endwhile; ?>
 					</ul>
@@ -48,8 +48,8 @@
 			</div>
 
 			<div class="site-info">
-				<p>I'm using the <a href="http://justinklemm.com/crisp-persona/">Crisp Persona</a> theme. It's a modern, responsive
-					Wordpress theme that works out of the box... and it's free! <a href="http://justinklemm.com/crisp-persona/">Try it</a>.</p>
+				<?php $theme = wp_get_theme(); ?>
+				<p>I'm using the <a href="<?php echo $theme->get( 'ThemeURI' ); ?>"><?php echo $theme->get( 'Name' ); ?></a> theme. It's a sleek, responsive WordPress theme for your personal blog... and it's free! <a href="<?php echo $theme->get( 'ThemeURI' ); ?>">Try it out</a>.</p>
 			</div>
 		</div><!-- .footer-content -->
 	</footer><!-- .site-footer -->
