@@ -39,7 +39,7 @@ $crisp_persona_options = get_option( 'crisp_persona_options' );
 				<?php if( !empty( $crisp_persona_options['twitter_url'] ) ){ ?><li><a class="twitter" href="<?php echo esc_url( $crisp_persona_options['twitter_url'] ); ?>">Twitter</a></li><?php } ?>
 				<?php if( !empty( $crisp_persona_options['gplus_url'] ) ){ ?><li><a class="gplus" href="<?php echo esc_url( $crisp_persona_options['gplus_url'] ); ?>">Google+</a></li><?php } ?>
 				<?php if( !empty( $crisp_persona_options['linkedin_url'] ) ){ ?><li><a class="linkedin" href="<?php echo esc_url( $crisp_persona_options['linkedin_url'] ); ?>">Linked In</a></li><?php } ?>
-				<?php if( isset( $crisp_persona_options['show_rss_icon'] ) && $crisp_persona_options['show_rss_icon'] != 'no' ){ ?><li><a class="rss" href="<?php echo esc_url( home_url( '/feed/' ) ); ?>">RSS</a></li><?php } ?>
+				<?php if( isset( $crisp_persona_options['show_rss_icon'] ) && $crisp_persona_options['show_rss_icon'] != 'no' ){ ?><li><a class="rss" href="<?php bloginfo('rss2_url'); ?>">RSS</a></li><?php } ?>
 			</ul>
 		</aside>
 		<?php } ?>
