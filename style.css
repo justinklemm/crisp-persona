@@ -1058,6 +1058,8 @@ body {
   color: white;
   background-image: none !important;
   background-color: #0077aa;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   /* These are needed to override some inconsistencies in the ".pure-form input" buttons */
   font-size: 18px !important;
   box-shadow: none !important;

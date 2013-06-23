@@ -26,6 +26,8 @@
 	color: $color-button;
 	background-image: none !important;
 	background-color: $color-button-bg;
+	font-family: $font-default;
+	font-weight: 300;
 	/* These are needed to override some inconsistencies in the ".pure-form input" buttons */
 	font-size: 18px !important;
 	box-shadow: none !important;
