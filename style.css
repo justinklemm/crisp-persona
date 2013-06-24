@@ -1170,7 +1170,8 @@ a:hover {
       text-decoration: none; }
   .site-personal .site-description {
     font-style: italic;
-    color: #999999; }
+    color: #999999;
+    line-height: 1.4em; }
   .site-personal .widget {
     display: none;
     /* widgets disabled by default in compact view */ }
@@ -1182,6 +1183,8 @@ a:hover {
       list-style: none; }
     .site-personal .widget li {
       margin: 0 0 5px 0; }
+    .site-personal .widget p {
+      line-height: 1.4em; }
   .site-personal .social-links {
     display: block;
     /* This is the only widget shown in compact view */ }

@@ -31,6 +31,7 @@
 		@extend .font-content;
 		font-style: italic;
 		color: $color-light;
+		line-height: 1.4em;
 	}
 
 	.widget {
@@ -49,6 +50,10 @@
 
 		li {
 			margin: 0 0 5px 0;
+		}
+
+		p {
+			line-height: 1.4em;
 		}
 	}
 
