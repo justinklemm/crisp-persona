@@ -902,7 +902,7 @@ striping:
   border-bottom-width: 0; }
 
 /*csslint unqualified-attributes:false, outline-none:false*/
-.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .comments-area .comment-reply-link {
+.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, .comments-area .comment-reply-link {
   font-size: 100%;
   *font-size: 90%;
   /*IE 6/7 - To reduce IE's oversized button text*/
@@ -936,12 +936,24 @@ button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
 .site-content .more-link:hover,
+.navigation-post .nav-previous a:hover,
+.navigation-paging .nav-previous a:hover,
+.navigation-image .nav-previous a:hover,
+.navigation-post .nav-next a:hover,
+.navigation-paging .nav-next a:hover,
+.navigation-image .nav-next a:hover,
 .comments-area .comment-reply-link:hover,
 .pure-button:focus,
 button:focus,
 input[type="submit"]:focus,
 input[type="button"]:focus,
 .site-content .more-link:focus,
+.navigation-post .nav-previous a:focus,
+.navigation-paging .nav-previous a:focus,
+.navigation-image .nav-previous a:focus,
+.navigation-post .nav-next a:focus,
+.navigation-paging .nav-next a:focus,
+.navigation-image .nav-next a:focus,
 .comments-area .comment-reply-link:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
@@ -951,7 +963,7 @@ input[type="button"]:focus,
   background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   background-image: linear, false, transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1); }
 
-.pure-button:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus, .site-content .more-link:focus, .comments-area .comment-reply-link:focus {
+.pure-button:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus, .site-content .more-link:focus, .navigation-post .nav-previous a:focus, .navigation-paging .nav-previous a:focus, .navigation-image .nav-previous a:focus, .navigation-post .nav-next a:focus, .navigation-paging .nav-next a:focus, .navigation-image .nav-next a:focus, .comments-area .comment-reply-link:focus {
   outline: 0; }
 
 .pure-button-active,
@@ -960,10 +972,16 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 .site-content .more-link:active,
+.navigation-post .nav-previous a:active,
+.navigation-paging .nav-previous a:active,
+.navigation-image .nav-previous a:active,
+.navigation-post .nav-next a:active,
+.navigation-paging .nav-next a:active,
+.navigation-image .nav-next a:active,
 .comments-area .comment-reply-link:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset; }
 
-.pure-button[disabled], button[disabled], input[disabled][type="submit"], input[disabled][type="button"], .site-content [disabled].more-link, .comments-area [disabled].comment-reply-link,
+.pure-button[disabled], button[disabled], input[disabled][type="submit"], input[disabled][type="button"], .site-content [disabled].more-link, .navigation-post .nav-previous a[disabled], .navigation-paging .nav-previous a[disabled], .navigation-image .nav-previous a[disabled], .navigation-post .nav-next a[disabled], .navigation-paging .nav-next a[disabled], .navigation-image .nav-next a[disabled], .comments-area [disabled].comment-reply-link,
 .pure-button-disabled,
 .pure-button-disabled:hover,
 .pure-button-disabled:focus,
@@ -982,7 +1000,7 @@ input[type="button"]:active,
   display: none; }
 
 /* Firefox: Get rid of the inner focus border */
-.pure-button::-moz-focus-inner, button::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, .pure-form input[type="submit"]::-moz-focus-inner, .pure-form input[type="button"]::-moz-focus-inner, .site-content .more-link::-moz-focus-inner, .comments-area .comment-reply-link::-moz-focus-inner {
+.pure-button::-moz-focus-inner, button::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, .pure-form input[type="submit"]::-moz-focus-inner, .pure-form input[type="button"]::-moz-focus-inner, .site-content .more-link::-moz-focus-inner, .navigation-post .nav-previous a::-moz-focus-inner, .navigation-paging .nav-previous a::-moz-focus-inner, .navigation-image .nav-previous a::-moz-focus-inner, .navigation-post .nav-next a::-moz-focus-inner, .navigation-paging .nav-next a::-moz-focus-inner, .navigation-image .nav-next a::-moz-focus-inner, .comments-area .comment-reply-link::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
@@ -1008,16 +1026,19 @@ body {
 /* Color settings */
 /* Include all styles */
 /* This is used as the traditional .clearfix class */
-.group:before, .site-content .entry-content:before,
+.group:before, .site-content .entry-content:before, .navigation-post:before, .navigation-paging:before, .navigation-image:before,
 .group:after,
-.site-content .entry-content:after {
+.site-content .entry-content:after,
+.navigation-post:after,
+.navigation-paging:after,
+.navigation-image:after {
   content: "";
   display: table; }
 
-.group:after, .site-content .entry-content:after {
+.group:after, .site-content .entry-content:after, .navigation-post:after, .navigation-paging:after, .navigation-image:after {
   clear: both; }
 
-.group, .site-content .entry-content {
+.group, .site-content .entry-content, .navigation-post, .navigation-paging, .navigation-image {
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */ }
 
@@ -1038,7 +1059,7 @@ body {
   width: 240px;
   margin: 0 0 10px 0; }
 
-.font-default, body, h4, h5, h6, .site-content .wp-caption-text, .site-content .page-links, .site-content .more-link {
+.font-default, body, h4, h5, h6, .site-content .wp-caption-text, .site-content .page-links {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
@@ -1054,10 +1075,12 @@ body {
 .screen-reader-text {
   display: none !important; }
 
-.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .comments-area .comment-reply-link {
+.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, .comments-area .comment-reply-link {
   color: white;
   background-image: none !important;
   background-color: #0077aa;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   /* These are needed to override some inconsistencies in the ".pure-form input" buttons */
   font-size: 18px !important;
   box-shadow: none !important;
@@ -1073,6 +1096,12 @@ button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
 .site-content .more-link:hover,
+.navigation-post .nav-previous a:hover,
+.navigation-paging .nav-previous a:hover,
+.navigation-image .nav-previous a:hover,
+.navigation-post .nav-next a:hover,
+.navigation-paging .nav-next a:hover,
+.navigation-image .nav-next a:hover,
 .comments-area .comment-reply-link:hover {
   text-decoration: none;
   color: white;
@@ -1210,7 +1239,7 @@ a:hover {
   .site-content img, .site-content .wp-caption {
     max-width: 100% !important;
     height: auto; }
-  .site-content .post, .site-content .page {
+  .site-content .post, .site-content .page, .site-content .attachment {
     margin-bottom: 40px; }
   .site-content .entry-meta {
     color: #999999;
@@ -1255,13 +1284,13 @@ a:hover {
     margin: 20px 0 0 0;
     display: none; }
 
-.navigation-post .nav-previous, .navigation-paging .nav-previous {
+.navigation-post .nav-previous, .navigation-paging .nav-previous, .navigation-image .nav-previous {
   float: left;
   margin-bottom: 10px; }
-.navigation-post .nav-next, .navigation-paging .nav-next {
+.navigation-post .nav-next, .navigation-paging .nav-next, .navigation-image .nav-next {
   float: right;
   margin-bottom: 10px; }
-.navigation-post a, .navigation-paging a {
+.navigation-post a, .navigation-paging a, .navigation-image a {
   display: block; }
 
 .comments-area ol, .comments-area ul {
