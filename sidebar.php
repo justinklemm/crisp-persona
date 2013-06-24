@@ -28,7 +28,7 @@ $crisp_persona_options = get_option( 'crisp_persona_options' );
 			!empty( $crisp_persona_options['twitter_url'] ) ||
 			!empty( $crisp_persona_options['gplus_url'] ) ||
 			!empty( $crisp_persona_options['linkedin_url'] ) ||
-		  ( isset( $crisp_persona_options['show_rss_icon'] ) && $crisp_persona_options['show_rss_icon'] != 'no')
+		  ( !isset( $crisp_persona_options['show_rss_icon'] ) || $crisp_persona_options['show_rss_icon'] != 'no')
 		){
 		?>
 		<aside class="widget social-links">
