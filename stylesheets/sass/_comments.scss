@@ -62,6 +62,7 @@
 	.comment-reply-link {
 		@extend .pure-button;
 		background-color: $color-light;
+		border-bottom: 3px solid darken($color-light, 10%) !important;
 		display: inline-block;
 	}
 
