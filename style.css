@@ -1293,6 +1293,9 @@ a:hover {
 .navigation-post a, .navigation-paging a, .navigation-image a {
   display: block; }
 
+.navigation-image {
+  margin-top: 10px; }
+
 .comments-area ol, .comments-area ul {
   list-style-type: none; }
 .comments-area li.comment {
@@ -1328,6 +1331,7 @@ a:hover {
   line-height: 1.35em; }
 .comments-area .comment-reply-link {
   background-color: #999999;
+  border-bottom: 3px solid gray !important;
   display: inline-block; }
 
 .site-footer {
