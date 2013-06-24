@@ -45,7 +45,7 @@
 	}
 	
 
-	.post, .page {
+	.post, .page, .attachment {
 		margin-bottom: 40px;
 	}
 
@@ -120,7 +120,6 @@
 
 	.more-link {
 		@extend .pure-button;
-		@extend .font-default;
 		display: inline-block;
 		margin: 5px 0;
 	}
@@ -133,16 +132,25 @@
 }
 
 
-.navigation-post, .navigation-paging {
+.navigation-post, .navigation-paging, .navigation-image {
+	@extend .group;
 
 	.nav-previous {
 		float: left;
 		margin-bottom: 10px;
+
+		a {
+			@extend .pure-button;
+		}
 	}
 
 	.nav-next {
 		float: right;
 		margin-bottom: 10px;
+		
+		a {
+			@extend .pure-button;
+		}
 	}
 
 	a {
