@@ -1155,13 +1155,10 @@ a:hover {
   .site-personal .site-header {
     margin: 0 0 20px 0; }
   .site-personal .site-avatar {
-    margin: 30px 0 5px 5px;
-    /*
-    img {
-    	width: 62.5px;
-    	height: 62.5px;
-    }
-    */ }
+    margin: 30px 0 5px 5px; }
+    .site-personal .site-avatar img {
+      width: 125px;
+      height: 125px; }
   .site-personal .site-title {
     font-size: 46px;
     padding-top: 5px; }
@@ -1170,7 +1167,8 @@ a:hover {
       text-decoration: none; }
   .site-personal .site-description {
     font-style: italic;
-    color: #999999; }
+    color: #999999;
+    line-height: 1.4em; }
   .site-personal .widget {
     display: none;
     /* widgets disabled by default in compact view */ }
@@ -1182,6 +1180,8 @@ a:hover {
       list-style: none; }
     .site-personal .widget li {
       margin: 0 0 5px 0; }
+    .site-personal .widget p {
+      line-height: 1.4em; }
   .site-personal .social-links {
     display: block;
     /* This is the only widget shown in compact view */ }
