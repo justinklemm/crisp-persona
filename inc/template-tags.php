@@ -115,7 +115,7 @@ function crisp_persona_posted_on() {
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() ),
-		'/about/', //esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 		esc_attr( sprintf( __( 'About %s', 'crisp_persona' ), get_the_author() ) ),
 		get_the_author()
 	);
