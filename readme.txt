@@ -39,5 +39,9 @@ Crisp Persona is a free WordPress theme designed by Justin Klemm. Feel free to u
 
 ## Changelog
 
+#### 1.0.1
+* Fixed author link pointing to harcoded `/about/` instead of author archives
+* Update the display of separators between post meta data in the footer
+
 #### 1.0.0
 * Initial Release
