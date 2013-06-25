@@ -42,7 +42,6 @@
 			<span class="cat-links">
 				<?php printf( __( 'Posted in %1$s', 'crisp_persona' ), $categories_list ); ?>
 			</span>
-			<span class="sep"> | </span>
 			<?php endif; // End if categories ?>
 
 			<?php
@@ -50,14 +49,15 @@
 				$tags_list = get_the_tag_list( '', __( ', ', 'crisp_persona' ) );
 				if ( $tags_list ) :
 			?>
+			<?php if ( $categories_list && crisp_persona_categorized_blog() ) : ?><span class="sep"> | </span><?php endif; ?>
 			<span class="tags-links">
 				<?php printf( __( 'Tagged %1$s', 'crisp_persona' ), $tags_list ); ?>
 			</span>
-			<span class="sep"> | </span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+		<?php if ( ( $categories_list && crisp_persona_categorized_blog() ) || $tags_list ) : ?><span class="sep"> | </span><?php endif; ?>
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'crisp_persona' ), __( '1 Comment', 'crisp_persona' ), __( '% Comments', 'crisp_persona' ) ); ?></span>
 		<?php endif; ?>
 
