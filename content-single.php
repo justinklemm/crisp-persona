@@ -59,21 +59,6 @@
 
 		<?php edit_post_link( __( 'Edit', 'crisp_persona' ), '<span class="edit-link"> | ', '</span>' ); ?>
 
-		<?php
-		// Get custom theme options
-		$crisp_persona_options = get_option( 'crisp_persona_options' );
-
-		$postTitle = get_the_title();
-		$postUrl = get_permalink();
-		$encodedTitle = urlencode($postTitle);
-		$encodedUrl = urlencode($postUrl);
-		?>
-		<ul id="social-sharing" class="linear social-sharing">
-			<li><a href="http://twitter.com/share" class="socialite twitter-share" data-text="<?php echo($postTitle); if($crisp_persona_options['twitter_handle']){ echo(" by @{$crisp_persona_options['twitter_handle']}"); } ?>" data-url="<?php echo($postUrl); ?>" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
-			<li><a href="https://plus.google.com/share?url=<?php echo($encodedUrl); ?>" class="socialite googleplus-one" data-size="tall" data-href="<?php echo($postUrl); ?>" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li>
-			<li><a href="http://www.facebook.com/sharer.php?u=<?php echo($encodedUrl); ?>&amp;t=<?php echo($encodedTitle); ?>" class="socialite facebook-like" data-href="<?php echo($postUrl); ?>" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
-			<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo($encodedUrl); ?>&amp;title=<?php echo($encodedTitle); ?>" class="socialite linkedin-share" data-url="<?php echo($postUrl); ?>" data-counter="top" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a></li>
-		</ul>
 	</footer><!-- .entry-meta -->
 	
 </article><!-- #post-## -->
