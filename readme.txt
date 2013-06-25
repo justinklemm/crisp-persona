@@ -39,5 +39,5 @@ Crisp Persona is a free WordPress theme designed by Justin Klemm. Feel free to u
 
 ## Changelog
 
-#### 1.0
+#### 1.0.0
 * Initial Release
