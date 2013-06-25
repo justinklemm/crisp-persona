@@ -1155,13 +1155,10 @@ a:hover {
   .site-personal .site-header {
     margin: 0 0 20px 0; }
   .site-personal .site-avatar {
-    margin: 30px 0 5px 5px;
-    /*
-    img {
-    	width: 62.5px;
-    	height: 62.5px;
-    }
-    */ }
+    margin: 30px 0 5px 5px; }
+    .site-personal .site-avatar img {
+      width: 125px;
+      height: 125px; }
   .site-personal .site-title {
     font-size: 46px;
     padding-top: 5px; }

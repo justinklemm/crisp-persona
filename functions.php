@@ -12,11 +12,6 @@ if ( ! isset( $content_width ) )
 	$content_width = 762; /* pixels */
 
 /*
- * Load admin interface file.
- */
-require_once ( get_stylesheet_directory() . '/theme-options.php' );
-
-/*
  * Load Jetpack compatibility file.
  */
 require( get_template_directory() . '/inc/jetpack.php' );
