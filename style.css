@@ -1220,6 +1220,11 @@ a:hover {
   overflow: hidden;
   padding-top: 30px;
   padding-bottom: 40px; }
+  .site-content hr {
+    display: block;
+    margin: 30px auto;
+    width: 70%;
+    border: 1px solid #eeeeee; }
   .site-content blockquote {
     color: #999999;
     font-style: italic; }
@@ -1249,7 +1254,7 @@ a:hover {
   .site-content .entry-header {
     margin: 0 0 10px 0; }
   .site-content .entry-content p, .site-content .entry-content li {
-    line-height: 1.45em; }
+    line-height: 1.5em; }
   .site-content .entry-content p {
     text-align: justify; }
   .site-content .entry-content table {
