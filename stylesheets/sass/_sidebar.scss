@@ -46,14 +46,24 @@
 
 		ul {
 			list-style: none;
+			padding: 0;
 		}
 
 		li {
 			margin: 0 0 5px 0;
 		}
 
+		li > ul {
+			padding-right: 20px;
+		}
+
 		p {
 			line-height: 1.4em;
+		}
+
+		img, select {
+			max-width: 100%;
+			height: auto;
 		}
 	}
 
