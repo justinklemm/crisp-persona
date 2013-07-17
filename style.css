@@ -641,20 +641,32 @@ table {
 .site-content form select[disabled],
 .pure-form textarea[disabled],
 .searchform textarea[disabled],
-.site-content form textarea[disabled],
-.pure-form input[readonly],
-.searchform input[readonly],
-.site-content form input[readonly],
+.site-content form textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3; }
+
+.pure-form input[readonly], .searchform input[readonly], .site-content form input[readonly],
 .pure-form select[readonly],
 .searchform select[readonly],
 .site-content form select[readonly],
 .pure-form textarea[readonly],
 .searchform textarea[readonly],
-.site-content form textarea[readonly] {
-  cursor: not-allowed;
-  background-color: #eaeded;
-  color: #cad2d3;
-  border-color: transparent; }
+.site-content form textarea[readonly],
+.pure-form input[readonly]:focus,
+.searchform input[readonly]:focus,
+.site-content form input[readonly]:focus,
+.pure-form select[readonly]:focus,
+.searchform select[readonly]:focus,
+.site-content form select[readonly]:focus,
+.pure-form textarea[readonly]:focus,
+.searchform textarea[readonly]:focus,
+.site-content form textarea[readonly]:focus {
+  background: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc; }
 
 .pure-form input:focus:invalid, .searchform input:focus:invalid, .site-content form input:focus:invalid,
 .pure-form textarea:focus:invalid,
@@ -693,7 +705,6 @@ table {
 
 .pure-form label, .searchform label, .site-content form label {
   margin: 0.5em 0 0.2em;
-  color: #999;
   font-size: 90%; }
 
 .pure-form fieldset, .searchform fieldset, .site-content form fieldset {
@@ -866,8 +877,7 @@ table {
   background: #e0e0e0;
   color: #000;
   text-align: left;
-  vertical-align: bottom;
-  white-space: nowrap; }
+  vertical-align: bottom; }
 
 /*
 striping:
@@ -902,7 +912,19 @@ striping:
   border-bottom-width: 0; }
 
 /*csslint unqualified-attributes:false, outline-none:false*/
-.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, .comments-area .comment-reply-link {
+.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, .comments-area .comment-reply-link,
+.pure-button:visited,
+button:visited,
+input[type="submit"]:visited,
+input[type="button"]:visited,
+.site-content .more-link:visited,
+.navigation-post .nav-previous a:visited,
+.navigation-paging .nav-previous a:visited,
+.navigation-image .nav-previous a:visited,
+.navigation-post .nav-next a:visited,
+.navigation-paging .nav-next a:visited,
+.navigation-image .nav-next a:visited,
+.comments-area .comment-reply-link:visited {
   font-size: 100%;
   *font-size: 90%;
   /*IE 6/7 - To reduce IE's oversized button text*/
