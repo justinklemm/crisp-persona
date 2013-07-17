@@ -61,15 +61,14 @@
 		display: block; /* This is the only widget shown in compact view */
 
 		a {
+			@extend .genericon;
 			display: inline-block;
-			text-align: left;
-			text-indent: -1000px;
+			text-align: center;
 			overflow: hidden;
-			width: 57px;
-			height: 57px;
+			width: 56px;
+			height: 56px;
+			font-size: 56px;
 			margin: 0 0 10px 10px;
-			background-repeat: none;
-			background-size: 100% 100%;
 		}
 
 		li {
@@ -81,27 +80,33 @@
 		}
 
 		.instagram {
-			background-image: url(images/social/instagram.png);
+			@extend .genericon-instagram;
+			color: #8E5D4A;
 		}
 
 		.facebook {
-			background-image: url(images/social/facebook.png);
+			@extend .genericon-facebook;
+			color: #3b5998;
 		}
 
 		.twitter {
-			background-image: url(images/social/twitter.png);
+			@extend .genericon-twitter;
+			color: #00aced;
 		}
 
 		.linkedin {
-			background-image: url(images/social/linkedin.png);
+			@extend .genericon-linkedin;
+			color: #007bb6;
 		}
 
 		.gplus {
-			background-image: url(images/social/google-plus.png);
+			@extend .genericon-googleplus;
+			color: #dd4b39;
 		}
 
 		.rss {
-			background-image: url(images/social/rss.png);
+			@extend .genericon-feed;
+			color: #ff6600;
 		}
 
 	}

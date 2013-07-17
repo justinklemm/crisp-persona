@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-<div class="hfeed site">
+<div id="site-container" class="hfeed site">
 
 	<div class="site-main">
 
