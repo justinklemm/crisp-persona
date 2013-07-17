@@ -35,7 +35,11 @@ Crisp Persona is a free WordPress theme designed by Justin Klemm. Feel free to u
 
 ## Changelog
 
-#### 1.0.2
+#### 1.0.3 (07/17/2013)
+* Fix to hide normal nav buttons when infinite scrolling is enabled
+* Tweaks to handle images and indented lists in sidebar widgets
+
+#### 1.0.2 (07/17/2013)
 * Updated footer credit as requested by WordPress.org
 * Replaced social media button set with a GPL compatible set
 * Enabled infinite scrolling functionality with JetPack
