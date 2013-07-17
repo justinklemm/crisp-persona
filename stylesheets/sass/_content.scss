@@ -180,3 +180,8 @@
 .navigation-image {
 	margin-top: 10px;
 }
+
+#infinite-handle span {
+	@extend .pure-button;
+}
+

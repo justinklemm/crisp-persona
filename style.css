@@ -912,7 +912,7 @@ striping:
   border-bottom-width: 0; }
 
 /*csslint unqualified-attributes:false, outline-none:false*/
-.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, .comments-area .comment-reply-link,
+.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, #infinite-handle span, .comments-area .comment-reply-link,
 .pure-button:visited,
 button:visited,
 input[type="submit"]:visited,
@@ -924,6 +924,7 @@ input[type="button"]:visited,
 .navigation-post .nav-next a:visited,
 .navigation-paging .nav-next a:visited,
 .navigation-image .nav-next a:visited,
+#infinite-handle span:visited,
 .comments-area .comment-reply-link:visited {
   font-size: 100%;
   *font-size: 90%;
@@ -964,6 +965,7 @@ input[type="button"]:hover,
 .navigation-post .nav-next a:hover,
 .navigation-paging .nav-next a:hover,
 .navigation-image .nav-next a:hover,
+#infinite-handle span:hover,
 .comments-area .comment-reply-link:hover,
 .pure-button:focus,
 button:focus,
@@ -976,6 +978,7 @@ input[type="button"]:focus,
 .navigation-post .nav-next a:focus,
 .navigation-paging .nav-next a:focus,
 .navigation-image .nav-next a:focus,
+#infinite-handle span:focus,
 .comments-area .comment-reply-link:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
@@ -985,7 +988,7 @@ input[type="button"]:focus,
   background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   background-image: linear, false, transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1); }
 
-.pure-button:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus, .site-content .more-link:focus, .navigation-post .nav-previous a:focus, .navigation-paging .nav-previous a:focus, .navigation-image .nav-previous a:focus, .navigation-post .nav-next a:focus, .navigation-paging .nav-next a:focus, .navigation-image .nav-next a:focus, .comments-area .comment-reply-link:focus {
+.pure-button:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus, .site-content .more-link:focus, .navigation-post .nav-previous a:focus, .navigation-paging .nav-previous a:focus, .navigation-image .nav-previous a:focus, .navigation-post .nav-next a:focus, .navigation-paging .nav-next a:focus, .navigation-image .nav-next a:focus, #infinite-handle span:focus, .comments-area .comment-reply-link:focus {
   outline: 0; }
 
 .pure-button-active,
@@ -1000,10 +1003,11 @@ input[type="button"]:active,
 .navigation-post .nav-next a:active,
 .navigation-paging .nav-next a:active,
 .navigation-image .nav-next a:active,
+#infinite-handle span:active,
 .comments-area .comment-reply-link:active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset; }
 
-.pure-button[disabled], button[disabled], input[disabled][type="submit"], input[disabled][type="button"], .site-content [disabled].more-link, .navigation-post .nav-previous a[disabled], .navigation-paging .nav-previous a[disabled], .navigation-image .nav-previous a[disabled], .navigation-post .nav-next a[disabled], .navigation-paging .nav-next a[disabled], .navigation-image .nav-next a[disabled], .comments-area [disabled].comment-reply-link,
+.pure-button[disabled], button[disabled], input[disabled][type="submit"], input[disabled][type="button"], .site-content [disabled].more-link, .navigation-post .nav-previous a[disabled], .navigation-paging .nav-previous a[disabled], .navigation-image .nav-previous a[disabled], .navigation-post .nav-next a[disabled], .navigation-paging .nav-next a[disabled], .navigation-image .nav-next a[disabled], #infinite-handle span[disabled], .comments-area [disabled].comment-reply-link,
 .pure-button-disabled,
 .pure-button-disabled:hover,
 .pure-button-disabled:focus,
@@ -1022,7 +1026,7 @@ input[type="button"]:active,
   display: none; }
 
 /* Firefox: Get rid of the inner focus border */
-.pure-button::-moz-focus-inner, button::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, .pure-form input[type="submit"]::-moz-focus-inner, .pure-form input[type="button"]::-moz-focus-inner, .site-content .more-link::-moz-focus-inner, .navigation-post .nav-previous a::-moz-focus-inner, .navigation-paging .nav-previous a::-moz-focus-inner, .navigation-image .nav-previous a::-moz-focus-inner, .navigation-post .nav-next a::-moz-focus-inner, .navigation-paging .nav-next a::-moz-focus-inner, .navigation-image .nav-next a::-moz-focus-inner, .comments-area .comment-reply-link::-moz-focus-inner {
+.pure-button::-moz-focus-inner, button::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, .pure-form input[type="submit"]::-moz-focus-inner, .pure-form input[type="button"]::-moz-focus-inner, .site-content .more-link::-moz-focus-inner, .navigation-post .nav-previous a::-moz-focus-inner, .navigation-paging .nav-previous a::-moz-focus-inner, .navigation-image .nav-previous a::-moz-focus-inner, .navigation-post .nav-next a::-moz-focus-inner, .navigation-paging .nav-next a::-moz-focus-inner, .navigation-image .nav-next a::-moz-focus-inner, #infinite-handle span::-moz-focus-inner, .comments-area .comment-reply-link::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
@@ -1432,7 +1436,7 @@ body {
 .screen-reader-text {
   display: none !important; }
 
-.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, .comments-area .comment-reply-link {
+.pure-button, button, input[type="submit"], input[type="button"], .pure-form input[type="submit"], .pure-form input[type="button"], .site-content .more-link, .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a, .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a, #infinite-handle span, .comments-area .comment-reply-link, .pure-button:visited, button:visited, input[type="submit"]:visited, input[type="button"]:visited, .site-content .more-link:visited, .navigation-post .nav-previous a:visited, .navigation-paging .nav-previous a:visited, .navigation-image .nav-previous a:visited, .navigation-post .nav-next a:visited, .navigation-paging .nav-next a:visited, .navigation-image .nav-next a:visited, #infinite-handle span:visited, .comments-area .comment-reply-link:visited {
   color: white;
   background-image: none !important;
   background-color: #0077aa;
@@ -1459,6 +1463,7 @@ input[type="button"]:hover,
 .navigation-post .nav-next a:hover,
 .navigation-paging .nav-next a:hover,
 .navigation-image .nav-next a:hover,
+#infinite-handle span:hover,
 .comments-area .comment-reply-link:hover {
   text-decoration: none;
   color: white;
@@ -1549,9 +1554,7 @@ a:hover {
       width: 56px;
       height: 56px;
       font-size: 56px;
-      vertical-align: middle;
-      margin: 0 0 10px 10px;
-      color: #999999; }
+      margin: 0 0 10px 10px; }
     .site-personal .social-links li {
       margin: 0; }
     .site-personal .social-links li:first-child a {
