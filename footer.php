@@ -49,7 +49,7 @@
 
 			<div class="site-info">
 				<?php $theme = wp_get_theme(); ?>
-				<p>I'm using the <a href="<?php echo $theme->get( 'ThemeURI' ); ?>"><?php echo $theme->get( 'Name' ); ?></a> theme. It's a sleek, responsive WordPress theme for your personal blog... and it's free! <a href="<?php echo $theme->get( 'ThemeURI' ); ?>">Try it out</a>.</p>
+				<p>I'm using the <a href="<?php echo $theme->get( 'ThemeURI' ); ?>"><?php echo $theme->get( 'Name' ); ?></a> WordPress theme.</p>
 			</div>
 		</div><!-- .footer-content -->
 	</footer><!-- .site-footer -->
