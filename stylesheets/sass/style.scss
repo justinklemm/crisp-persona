@@ -64,6 +64,7 @@ $color-button-bg-hover: darken($color-button-bg, 10%);
 
 /* Include all styles */
 @import '_misc.scss';
+@import '_genericons.scss';
 @import '_global.scss';
 @import '_sidebar.scss';
 @import '_content.scss';
