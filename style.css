@@ -1606,7 +1606,7 @@ a:hover {
     border-radius: 5px; }
   .site-content dt {
     font-weight: bold; }
-  .site-content img, .site-content .wp-caption {
+  .site-content img, .site-content video, .site-content iframe, .site-content embed, .site-content .wp-caption {
     max-width: 100% !important;
     height: auto; }
   .site-content .post, .site-content .page, .site-content .attachment {
