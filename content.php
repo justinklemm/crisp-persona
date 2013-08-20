@@ -5,15 +5,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header">
-		<a href="<?php the_permalink(); ?>" rel="bookmark"><?php if(has_post_thumbnail()){ the_post_thumbnail('large', array('class' => 'featured-image')); } ?></a>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-		
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php crisp_persona_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<div class="entry-meta"><?php crisp_persona_posted_on(); ?></div><!-- .entry-meta -->
 		<?php endif; ?>
+		<a href="<?php the_permalink(); ?>" rel="bookmark"><?php if(has_post_thumbnail()){ the_post_thumbnail('large', array('class' => 'featured-image')); } ?></a>
 	</header><!-- .entry-header -->
 
 	<?php /*if ( is_search() ) : // Only display Excerpts for Search ?>
@@ -63,4 +61,5 @@
 
 		<?php edit_post_link( __( 'Edit', 'crisp_persona' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
+
 </article><!-- #post-## -->
