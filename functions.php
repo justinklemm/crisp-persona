@@ -100,7 +100,8 @@ add_action( 'widgets_init', 'crisp_persona_widgets_init' );
  * Enqueue scripts and styles
  */
 function crisp_persona_scripts() {
-	wp_enqueue_style( 'crisp-persona-style', get_stylesheet_uri() );
+    $theme = wp_get_theme();
+    wp_enqueue_style( 'crisp-persona-style', get_stylesheet_uri(), array(), $theme->Version );
 
 	//wp_enqueue_script( 'crisp-persona-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'crisp-persona-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '20130601', false );
