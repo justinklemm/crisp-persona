@@ -48,6 +48,9 @@
 	
 	img, video, iframe, embed, .wp-caption {
 		max-width: 100% !important;
+	}
+
+	img, video, .wp-caption {
 		height: auto;
 	}
 	

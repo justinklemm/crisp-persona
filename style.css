@@ -1603,7 +1603,8 @@ a:hover {
   .site-content dt {
     font-weight: bold; }
   .site-content img, .site-content video, .site-content iframe, .site-content embed, .site-content .wp-caption {
-    max-width: 100% !important;
+    max-width: 100% !important; }
+  .site-content img, .site-content video, .site-content .wp-caption {
     height: auto; }
   .site-content .post, .site-content .page, .site-content .attachment {
     margin-bottom: 40px; }
