@@ -1612,6 +1612,8 @@ a:hover {
     font-size: 1em; }
   .site-content .entry-header {
     margin: 0 0 10px 0; }
+    .site-content .entry-header .featured-image {
+      margin: 20px 0 0 0; }
   .site-content .entry-content p, .site-content .entry-content li {
     line-height: 1.5em; }
   .site-content .entry-content p {
