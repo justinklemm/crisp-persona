@@ -1444,11 +1444,14 @@ body {
   /* These are needed to override some inconsistencies in the ".pure-form input" buttons */
   font-size: 18px !important;
   box-shadow: none !important;
-  border-radius: 4px !important;
+  border-radius: 5px !important;
+  border: none rgba(0, 0, 0, 0) !important;
+  /*
   border-top: none rgba(0, 0, 0, 0) !important;
   border-left: none rgba(0, 0, 0, 0) !important;
   border-right: none rgba(0, 0, 0, 0) !important;
-  border-bottom: 3px solid #005377 !important; }
+  border-bottom: 3px solid $color-button-bg-hover !important;
+  */ }
 
 .pure-button-hover,
 .pure-button:hover,
@@ -1559,23 +1562,14 @@ a:hover {
       width: 56px;
       height: 56px;
       font-size: 56px;
-      margin: 0 0 10px 10px; }
+      margin: 0 0 10px 10px;
+      color: #999999; }
+      .site-personal .social-links a:hover {
+        color: #333333; }
     .site-personal .social-links li {
       margin: 0; }
     .site-personal .social-links li:first-child a {
       margin-left: 0px; }
-    .site-personal .social-links .instagram {
-      color: #8E5D4A; }
-    .site-personal .social-links .facebook {
-      color: #3b5998; }
-    .site-personal .social-links .twitter {
-      color: #00aced; }
-    .site-personal .social-links .linkedin {
-      color: #007bb6; }
-    .site-personal .social-links .gplus {
-      color: #dd4b39; }
-    .site-personal .social-links .rss {
-      color: #ff6600; }
 
 .site-content {
   display: inline;
@@ -1707,7 +1701,6 @@ a:hover {
   line-height: 1.35em; }
 .comments-area .comment-reply-link {
   background-color: #999999;
-  border-bottom: 3px solid gray !important;
   display: inline-block; }
 
 .site-footer {
@@ -1828,10 +1821,12 @@ a:hover {
     width: 61.45833%;
     margin: 0 2.60417%;
     /* We need to hack the grid a little bit to get the right border to work... */
+    /*
     margin-right: 0;
     padding-right: 2.4%;
-    min-height: 900px;
-    border-right: 2px solid #eeeeee; }
+    border-right: 2px solid $color-light-bg;
+    */
+    min-height: 900px; }
     .site-content .social-sharing {
       display: block; } }
 @media print {

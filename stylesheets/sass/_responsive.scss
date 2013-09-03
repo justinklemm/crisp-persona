@@ -97,10 +97,13 @@
 	.site-content {
 		@include column(8);
 		/* We need to hack the grid a little bit to get the right border to work... */
+		/*
 		margin-right: 0;
 		padding-right: 2.4%;
-		min-height: 900px;
 		border-right: 2px solid $color-light-bg;
+		*/
+		min-height: 900px;
+		
 
 		.social-sharing {
 			display: block;

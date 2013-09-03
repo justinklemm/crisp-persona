@@ -31,11 +31,14 @@
 	/* These are needed to override some inconsistencies in the ".pure-form input" buttons */
 	font-size: 18px !important;
 	box-shadow: none !important;
-	border-radius: 4px !important;
+	border-radius: 5px !important;
+	border: none rgba(0, 0, 0, 0) !important;
+	/*
 	border-top: none rgba(0, 0, 0, 0) !important;
 	border-left: none rgba(0, 0, 0, 0) !important;
 	border-right: none rgba(0, 0, 0, 0) !important;
 	border-bottom: 3px solid $color-button-bg-hover !important;
+	*/
 }
 
 .pure-button-hover,
