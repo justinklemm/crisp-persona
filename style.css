@@ -1523,6 +1523,8 @@ a:hover {
     .site-personal .site-avatar img {
       width: 125px;
       height: 125px; }
+    .site-personal .site-avatar .round {
+      border-radius: 50%; }
   .site-personal .site-title {
     font-size: 46px;
     padding-top: 5px; }

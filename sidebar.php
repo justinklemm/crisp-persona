@@ -12,7 +12,7 @@ $crisp_persona_options = get_option( 'crisp_persona_options' );
 	<div class="site-personal" role="complementary">
 
 		<header class="site-header" role="banner">
-			<div class="site-avatar"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php if($crisp_persona_options['avatar_url']){ echo($crisp_persona_options['avatar_url']); }else{ echo(get_template_directory_uri().'/images/avatar.png'); } ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a></div>
+			<div class="site-avatar"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img <?php if($crisp_persona_options['avatar_round']){ echo('class="round" '); } ?>src="<?php if($crisp_persona_options['avatar_url']){ echo($crisp_persona_options['avatar_url']); }else{ echo(get_template_directory_uri().'/images/avatar.png'); } ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a></div>
 			<div class="site-branding">
 				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
 				<div class="site-description"><?php bloginfo( 'description' ); ?></div>

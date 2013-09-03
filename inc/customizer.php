@@ -50,9 +50,26 @@ function crisp_persona_customize_register( $wp_customize ) {
 
   $wp_customize->add_control( new WP_Customize_Upload_Control($wp_customize, 'avatar_url', array(
       'label'         => __('Avatar Photo Upload (125 x 125 is ideal)', 'crisp-persona'),
+      'priority'      => 1,
       'section'       => 'crisp_persona_avatar_settings',
       'settings'      => 'crisp_persona_options[avatar_url]'
   ) ) );
+
+  $wp_customize->add_setting('crisp_persona_options[avatar_round]', array(
+    'default'             => $wp_customize->get_setting('crisp_persona_options[avatar_round]'),
+    'capability'          => 'edit_theme_options',
+    'type'                => 'option',
+    'transport'           => 'refresh',
+    'sanitize_callback'   => 'crisp_persona_options_validate'
+  ) );
+
+  $wp_customize->add_control( $key, array(
+      'label'       => 'Round Avatar Photo',
+      'priority'    => 2,
+      'section'     => 'crisp_persona_avatar_settings',
+      'type'        => 'checkbox',
+      'settings'    => 'crisp_persona_options[avatar_round]'
+    ) );
 
 
   // Social links
