@@ -67,10 +67,6 @@
 
 	.entry-header {
 		margin: 0 0 10px 0;
-
-		.featured-image {
-			margin: 20px 0 0 0;
-		}
 	}
 
 	.entry-content {
@@ -101,7 +97,11 @@
 	.featured-image {
 		width: 100%;
 		height: auto;
-		margin-bottom: 30px;
+		margin: 0 0 30px 0;
+	}
+
+	.featured-image-bottom {
+		margin: 30px 0 0 0 !important;
 	}
 
 	.alignleft {

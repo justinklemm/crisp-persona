@@ -11,7 +11,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta"><?php crisp_persona_posted_on(); ?></div><!-- .entry-meta -->
 		<?php endif; ?>
-		<a href="<?php the_permalink(); ?>" rel="bookmark"><?php if(has_post_thumbnail()){ the_post_thumbnail('large', array('class' => 'featured-image')); } ?></a>
+		<a href="<?php the_permalink(); ?>" rel="bookmark"><?php if(has_post_thumbnail()){ the_post_thumbnail('large', array('class' => 'featured-image featured-image-bottom')); } ?></a>
 	</header><!-- .entry-header -->
 
 	<?php /*if ( is_search() ) : // Only display Excerpts for Search ?>
