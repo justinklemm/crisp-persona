@@ -1509,7 +1509,7 @@ a:hover {
 
 .site-main {
   margin: 0 auto;
-  max-width: 1240px; }
+  max-width: 1000px; }
 
 .site-personal {
   display: inline;
@@ -1715,7 +1715,7 @@ a:hover {
   background-image: url(images/mesh-grey.png); }
   .site-footer .footer-content {
     margin: 0 auto;
-    max-width: 1240px; }
+    max-width: 1000px; }
   .site-footer .col {
     display: inline;
     float: left;

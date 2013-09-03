@@ -36,10 +36,11 @@ Crisp Persona is a free WordPress theme designed by Justin Klemm. Feel free to u
 ## Changelog
 
 #### 1.0.4 (09/03/2013)
-* Option to make the site avatar round
-* Moved featured photos below post title/meta in listings
+* Cut down max site width from 1240px to 1000px
 * Removed coloring of social media icons
 * Remove gray border between content and sidebar
+* Option to make the site avatar round
+* Moved featured photos below post title/meta in listings
 * Removed 3D (bottom) border on buttons
 * Fix to limit width of videos, iframes and embeds to 100% (like images)
 
