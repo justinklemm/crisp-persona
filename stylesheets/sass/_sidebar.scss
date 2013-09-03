@@ -79,6 +79,11 @@
 			height: 56px;
 			font-size: 56px;
 			margin: 0 0 10px 10px;
+			color: $color-light;
+
+			&:hover {
+				color: $color-dark;
+			}
 		}
 
 		li {
@@ -91,32 +96,26 @@
 
 		.instagram {
 			@extend .genericon-instagram;
-			color: #8E5D4A;
 		}
 
 		.facebook {
 			@extend .genericon-facebook;
-			color: #3b5998;
 		}
 
 		.twitter {
 			@extend .genericon-twitter;
-			color: #00aced;
 		}
 
 		.linkedin {
 			@extend .genericon-linkedin;
-			color: #007bb6;
 		}
 
 		.gplus {
 			@extend .genericon-googleplus;
-			color: #dd4b39;
 		}
 
 		.rss {
 			@extend .genericon-feed;
-			color: #ff6600;
 		}
 
 	}
