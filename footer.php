@@ -16,7 +16,7 @@
 					<h3>Popular Posts</h3>
 					<ul>
 					<?php
-					$popular = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'post_view_count', 'orderby' => 'meta_value_num', 'order' => 'DESC' ) );
+					$popular = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'crisp_persona_post_view_count', 'orderby' => 'meta_value_num', 'order' => 'DESC' ) );
 					while ( $popular->have_posts() ) : $popular->the_post();
 					?>
 					<li class="post">

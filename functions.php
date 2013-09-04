@@ -141,7 +141,7 @@ function crisp_persona_truncate($content, $len = 100){
  * This code was adapted from here: http://www.wpbeginner.com/wp-tutorials/how-to-track-popular-posts-by-views-in-wordpress-without-a-plugin/
  */
 function crisp_persona_increment_post_views($postId) {
-    $key = 'post_view_count';
+    $key = 'crisp_persona_post_view_count';
     $count = get_post_meta($postId, $key, true);
     if(!$count){
         $count = 1;
