@@ -30,10 +30,17 @@ The full source of this theme can be found on [GitHub](https://github.com/justin
 ## Licenses
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License version 2, see file license.txt.
 
+This theme makes use of the [Genericons icon set](http://genericons.com/). Copyright/license information can be found in "genericons" directory.
+
 ## Copyright
 Crisp Persona is a free WordPress theme designed by Justin Klemm. Feel free to use, modify and redistribute this theme as you like. Crisp Persona is distributed under the terms of the GNU GPL.
 
 ## Changelog
+
+#### 1.0.5 (09/04/2013)
+* Remove min-height limit on content area
+* Added full Genericons directory with copyright/license declaration
+* Renamed variable used for post popularity
 
 #### 1.0.4 (09/03/2013)
 * Cut down max site width from 1240px to 1000px
