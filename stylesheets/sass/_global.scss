@@ -68,11 +68,13 @@ body {
 
 h1, h2, h3 {
 	@extend .font-headline;
+	font-weight: 100;
 	margin: 0 0 0.2em 0;
 }
 
 h4, h5, h6 {
 	@extend .font-default;
+	font-weight: 300;
 	margin: 0 0 0.15em 0;
 }
 

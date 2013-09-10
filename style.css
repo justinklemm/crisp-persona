@@ -1476,9 +1476,11 @@ body {
   min-width: 300px; }
 
 h1, h2, h3 {
+  font-weight: 100;
   margin: 0 0 0.2em 0; }
 
 h4, h5, h6 {
+  font-weight: 300;
   margin: 0 0 0.15em 0; }
 
 h1 {
@@ -1527,6 +1529,7 @@ a:hover {
       border-radius: 50%; }
   .site-personal .site-title {
     font-size: 38px;
+    font-weight: 100;
     padding-top: 5px; }
     .site-personal .site-title a {
       color: #333333;

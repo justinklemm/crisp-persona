@@ -22,6 +22,7 @@
 	.site-title {
 		@extend .font-headline;
 		font-size: $header-font-size;
+		font-weight: 100;
 		padding-top: 5px;
 
 		a {
