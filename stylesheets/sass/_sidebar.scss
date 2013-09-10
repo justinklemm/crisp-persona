@@ -7,11 +7,11 @@
 	}
 
 	.site-avatar {
-		margin: 30px 0 5px 5px;
+		margin: 15px 0 5px 5px;
 		
 		img {
-			width: 125px;
-			height: 125px;
+			width: 94px;
+			height: 94px;
 		}
 		
 		.round {
@@ -32,6 +32,7 @@
 
 	.site-description {
 		@extend .font-content;
+		font-size: 15px;
 		font-style: italic;
 		color: $color-light;
 		line-height: 1.4em;
@@ -78,9 +79,9 @@
 			display: inline-block;
 			text-align: center;
 			overflow: hidden;
-			width: 56px;
-			height: 56px;
-			font-size: 56px;
+			width: 48px;
+			height: 48px;
+			font-size: 48px;
 			margin: 0 0 10px 10px;
 			color: $color-light;
 

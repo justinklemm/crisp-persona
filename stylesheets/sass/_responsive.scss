@@ -1,12 +1,39 @@
 
 @media screen and (min-width: 480px) {
+	h1 {
+		font-size: $h1-font-size-large;
+	}
+
+	h2 {
+		font-size: $h2-font-size-large;
+	}
+
 	.site-personal {
 		.site-avatar {
+			margin: 30px 0 5px 5px;
 			float: right;
+
+			img {
+				width: 125px;
+				height: 125px;
+			}
 		}
 
 		.site-title {
 			padding-top: 15px;
+			font-size: $header-font-size-large;
+		}
+
+		.site-description {
+			font-size: 17px;
+		}
+
+		.social-links {
+			a {
+				width: 56px;
+				height: 56px;
+				font-size: 56px;
+			}
 		}
 	}
 
@@ -96,13 +123,7 @@
 
 	.site-content {
 		@include column(8);
-		/* We need to hack the grid a little bit to get the right border to work... */
-		/*
-		margin-right: 0;
-		padding-right: 2.4%;
-		border-right: 2px solid $color-light-bg;
-		min-height: 900px;
-		*/
+		padding-top: 30px;
 
 		.social-sharing {
 			display: block;
