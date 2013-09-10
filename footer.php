@@ -13,7 +13,7 @@
 			
 			<div class="footer-links group">
 				<div class="col popular-posts">
-					<h3>Popular Posts</h3>
+					<h3><?php _e( 'Popular Posts', 'crisp_persona' ); ?></h3>
 					<ul>
 					<?php
 					$popular = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'crisp_persona_post_view_count', 'orderby' => 'meta_value_num', 'order' => 'DESC' ) );
@@ -27,7 +27,7 @@
 					</ul>
 				</div>
 				<div class="col category-links">
-					<h3>Categories</h3>
+					<h3><?php _e( 'Categories', 'crisp_persona' ); ?></h3>
 					<ul>
 					<?php
 						wp_list_categories( array(
@@ -42,14 +42,16 @@
 				</div>
 				<div class="col page-links">
 
-					<h3>Other Sections</h3>
+					<h3><?php _e( 'Other Sections', 'crisp_persona' ); ?></h3>
 					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => false ) ); ?>
 				</div>
 			</div>
 
 			<div class="site-info">
-				<?php $theme = wp_get_theme(); ?>
-				<p>I'm using the <a href="<?php echo $theme->get( 'ThemeURI' ); ?>"><?php echo $theme->get( 'Name' ); ?></a> WordPress theme.</p>
+				<p><?php
+				$theme = wp_get_theme();
+				printf( __( "I'm using the %s WordPress theme.", 'crisp_persona' ), '<a href="' . $theme->get( 'ThemeURI' ) . '">' . $theme->get( 'Name' ) . '</a>' );
+				?></p>
 			</div>
 		</div><!-- .footer-content -->
 	</footer><!-- .site-footer -->
