@@ -45,6 +45,7 @@
 		.title {
 			@extend .font-headline;
 			font-size: $h3-font-size;
+			font-weight: 100;
 			margin-bottom: 10px;
 			display: none;
 		}

@@ -1544,6 +1544,7 @@ a:hover {
     /* widgets disabled by default in compact view */ }
     .site-personal .widget .title {
       font-size: 26px;
+      font-weight: 100;
       margin-bottom: 10px;
       display: none; }
     .site-personal .widget ul {
