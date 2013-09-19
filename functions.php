@@ -104,7 +104,7 @@ function crisp_persona_scripts() {
     wp_enqueue_style( 'crisp-persona-style', get_stylesheet_uri(), array(), $theme->Version );
 
 	//wp_enqueue_script( 'crisp-persona-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-	wp_enqueue_script( 'crisp-persona-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '20130601', false );
+	//wp_enqueue_script( 'crisp-persona-main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '20130601', false );
 	wp_enqueue_script( 'crisp-persona-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130601', true );
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
