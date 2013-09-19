@@ -1596,14 +1596,14 @@ a:hover {
     font-style: italic; }
   .site-content pre {
     padding: 10px;
-    background-color: black;
-    color: white;
     font-size: 0.9em; }
   .site-content code {
     padding: 2px 4px;
     background-color: #eeeeee;
     border: 1px solid #d4d4d4;
     font-size: 0.9em;
+    font-weight: normal;
+    font-style: normal;
     border-radius: 5px; }
   .site-content dt {
     font-weight: bold; }

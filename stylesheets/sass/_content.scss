@@ -29,8 +29,8 @@
 
 	pre {
 		padding: 10px;
-		background-color: $color-pre-bg;
-		color: $color-pre;
+		//background-color: $color-pre-bg;
+		//color: $color-pre;
 		font-size: 0.9em;
 	}
 
@@ -39,6 +39,8 @@
 		background-color: $color-light-bg;
 		border: 1px solid darken($color-light-bg, 10%);
 		font-size: 0.9em;
+		font-weight: normal;
+		font-style: normal;
 		border-radius: 5px;
 	}
 
