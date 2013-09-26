@@ -1,0 +1,3 @@
+[submodule "stylesheets/pure"]
+	path = stylesheets/pure
+	url = git@github.com:yui/pure
