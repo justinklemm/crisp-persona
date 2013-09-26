@@ -1,6 +1,7 @@
 
 .site-personal {
 	@include column(12);
+	padding-bottom: 40px;
 
 	.site-header {
 		margin: 0 0 20px 0;

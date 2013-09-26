@@ -17,7 +17,7 @@ Theme options implemented with help from http://themeshaper.com/2010/06/03/sampl
 */
 
 @import '../bourbon/bourbon';
-@import '../pure/src/base/css/_normalize.scss';
+@import '_normalize.scss';
 @import '../pure/src/forms/css/_forms.scss';
 @import '../pure/src/tables/css/_tables.scss';
 @import '../pure/src/buttons/css/_buttons.scss';
@@ -55,6 +55,7 @@ $h6-font-size: 16px;
 /* Color settings */
 $color-dark: #333;
 $color-light: #999;
+$color-lighter: #aaa;
 $color-light-bg: #eee;
 $color-link: #07a;
 $color-link-hover: darken($color-link, 10%);;
