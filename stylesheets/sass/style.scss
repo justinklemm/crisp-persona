@@ -53,15 +53,15 @@ $h5-font-size: 18px;
 $h6-font-size: 16px;
 
 /* Color settings */
-$color-dark: #333;
-$color-light: #999;
-$color-lighter: #aaa;
-$color-light-bg: #eee;
+$color-dark: #333333;
+$color-light: #999999;
+$color-lighter: #aaaaaa;
+$color-light-bg: #eeeeee;
 $color-link: #07a;
 $color-link-hover: darken($color-link, 10%);;
-$color-pre: #fff;
-$color-pre-bg: #000;
-$color-button: #fff;
+$color-pre: #ffffff;
+$color-pre-bg: #000000;
+$color-button: #ffffff;
 $color-button-bg: $color-link;
 $color-button-bg-hover: darken($color-button-bg, 10%);
 

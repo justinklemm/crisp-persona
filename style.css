@@ -1540,12 +1540,12 @@ a:hover {
   float: left;
   margin-bottom: 10px; }
   .navigation-post .nav-previous a, .navigation-paging .nav-previous a, .navigation-image .nav-previous a {
-    background-color: #999999; }
+    background-color: #aaaaaa !important; }
 .navigation-post .nav-next, .navigation-paging .nav-next, .navigation-image .nav-next {
   float: right;
   margin-bottom: 10px; }
   .navigation-post .nav-next a, .navigation-paging .nav-next a, .navigation-image .nav-next a {
-    background-color: #999999; }
+    background-color: #aaaaaa !important; }
 .navigation-post a, .navigation-paging a, .navigation-image a {
   display: block; }
 

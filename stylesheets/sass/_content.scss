@@ -169,7 +169,7 @@
 
 		a {
 			@extend .pure-button;
-			background-color: $color-light;
+			background-color: $color-lighter !important;
 		}
 	}
 
@@ -179,7 +179,7 @@
 		
 		a {
 			@extend .pure-button;
-			background-color: $color-light;
+			background-color: $color-lighter !important;
 		}
 	}
 
