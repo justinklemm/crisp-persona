@@ -20,12 +20,17 @@
 	</div><!-- .entry-summary -->
 	<?php else :*/ ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) ); ?>
 		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'crisp_persona' ),
-				'after'  => '</div>',
-			) );
+		if( get_option('rss_use_excerpt') === 1 ){
+			the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) );
+		}else{
+			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) );
+		}
+
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . __( 'Pages:', 'crisp_persona' ),
+			'after'  => '</div>',
+		) );
 		?>
 	</div><!-- .entry-content -->
 	<?php //endif; ?>
