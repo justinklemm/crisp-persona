@@ -21,7 +21,7 @@
 	<?php else :*/ ?>
 	<div class="entry-content">
 		<?php
-		if( get_option('rss_use_excerpt') === 1 ){
+		if( get_option('rss_use_excerpt') ){
 			the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) );
 		}else{
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) );
