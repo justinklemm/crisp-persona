@@ -23,6 +23,7 @@
 		<?php
 		if( get_option('rss_use_excerpt') ){
 			the_excerpt( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) );
+			?><p><a href="<?php the_permalink(); ?>" class="more-link"><?php __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) ?></a></p><?php
 		}else{
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'crisp_persona' ) );
 		}
