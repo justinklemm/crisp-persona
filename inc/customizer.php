@@ -80,7 +80,9 @@ function crisp_persona_customize_register( $wp_customize ) {
     'gplus_url'      => __( 'Google+ URL','crisp-persona' ), 
     'linkedin_url'   => __( 'LinkedIn URL','crisp-persona' ),
     'instagram_url'  => __( 'Instagram URL','crisp-persona' ),
-    'twitter_url'    => __( 'Twitter URL','crisp-persona' )
+    'twitter_url'    => __( 'Twitter URL','crisp-persona' ),
+    'github_url'     => __( 'GitHub URL','crisp-persona' ),
+    'mail_url'       => __( 'Mail URL','crisp-persona' )
   ); 
 
   $wp_customize->add_section( 'crisp_persona_social_settings', array(

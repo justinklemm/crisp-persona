@@ -20,6 +20,8 @@ You can setup links to the following social networks:
 * Instagram
 * LinkedIn
 * Twitter
+* GitHub
+* Mail
 
 An RSS icon can also be enabled. When specified, the icons will appear in the sidebar (and header in mobile view).
 
@@ -36,6 +38,9 @@ This theme makes use of the [Genericons icon set](http://genericons.com/). Copyr
 Crisp Persona is a free WordPress theme designed by Justin Klemm. Feel free to use, modify and redistribute this theme as you like. Crisp Persona is distributed under the terms of the GNU GPL.
 
 ## Changelog
+
+#### 1.0.7 (09/01/2015)
+* Added support for GitHub and Mail social links
 
 #### 1.0.6 (09/30/2013)
 * Fix so that post summaries are shown when that setting is enabled

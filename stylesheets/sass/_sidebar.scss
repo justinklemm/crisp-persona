@@ -125,6 +125,14 @@
 			@extend .genericon-feed;
 		}
 
+		.github {
+			@extend .genericon-github;
+		}
+
+		.mail {
+			@extend .genericon-mail;
+		}
+
 	}
 
 }
