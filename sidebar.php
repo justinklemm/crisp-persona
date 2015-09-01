@@ -23,17 +23,21 @@ $crisp_persona_options = get_option( 'crisp_persona_options' );
 		<?php
 		// Only social social box if there's something to show...
 		if(
+			!empty( $crisp_persona_options['mail_url'] ) ||
+			!empty( $crisp_persona_options['github_url'] ) ||
 			!empty( $crisp_persona_options['facebook_url'] ) ||
 			!empty( $crisp_persona_options['instagram_url'] ) ||
 			!empty( $crisp_persona_options['twitter_url'] ) ||
 			!empty( $crisp_persona_options['gplus_url'] ) ||
 			!empty( $crisp_persona_options['linkedin_url'] ) ||
-		  !empty( $crisp_persona_options['show_rss_icon'] )
+			!empty( $crisp_persona_options['show_rss_icon'] )
 		){
 		?>
 		<aside class="widget social-links">
 			<div class="title">Find me on the web</div>
 			<ul class="linear group">
+				<?php if( !empty( $crisp_persona_options['mail_url'] ) ){ ?><li><a class="mail" href="<?php echo esc_url( $crisp_persona_options['mail_url'] ); ?>" title="Mail"></a></li><?php } ?>
+				<?php if( !empty( $crisp_persona_options['github_url'] ) ){ ?><li><a class="github" href="<?php echo esc_url( $crisp_persona_options['github_url'] ); ?>" title="GitHub"></a></li><?php } ?>
 				<?php if( !empty( $crisp_persona_options['facebook_url'] ) ){ ?><li><a class="facebook" href="<?php echo esc_url( $crisp_persona_options['facebook_url'] ); ?>" title="Facebook"></a></li><?php } ?>
 				<?php if( !empty( $crisp_persona_options['instagram_url'] ) ){ ?><li><a class="instagram" href="<?php echo esc_url( $crisp_persona_options['instagram_url'] ); ?>" title="Instagram"></a></li><?php } ?>
 				<?php if( !empty( $crisp_persona_options['twitter_url'] ) ){ ?><li><a class="twitter" href="<?php echo esc_url( $crisp_persona_options['twitter_url'] ); ?>" title="Twitter"></a></li><?php } ?>
